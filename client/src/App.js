@@ -13,9 +13,10 @@ class App extends React.Component{
             inventory : {
                 itemName : "",
                 modelNumber : "",
+                serialNumber: "",
                 location : "",
                 price : "",
-                quantiy : ""
+                quantity : ""
             },
             message : ""
         };
@@ -30,6 +31,7 @@ class App extends React.Component{
     componentDidMount(){
         InventoryAPI.getInventories().then(data=>{
             console.log(data);
+            console.log("componentDidMount")
             this.setState({inventories : data.response})});
     }
 
@@ -38,9 +40,10 @@ class App extends React.Component{
           inventory: {
             itemName: "",
             modelNumber: "",
+            serialNumber: "",
             location: "",
             price: "",
-            quantiy: ""
+            quantity: ""
           }
         });
     }
@@ -72,7 +75,7 @@ class App extends React.Component{
 
     async updateHandler(e){
         e.preventDefault();
-        const updateData = await InventoryAPI.updateEmployee(this.state.inventory);
+        const updateData = await InventoryAPI.updateInventory(this.state.inventory);
         const message = updateData.message;
         if(message.msgError){
             this.setState({message});
@@ -87,7 +90,8 @@ class App extends React.Component{
 
     async addHandler(e){
         e.preventDefault();
-        const postData = await InventoryAPI.createEmployee(this.state.inventory);
+        console.log(JSON.stringify(this.state.inventory))
+        const postData = await InventoryAPI.createInventory(this.state.inventory);
         const message = postData.message;
         if(message.msgError){
             this.setState({message});
@@ -99,7 +103,7 @@ class App extends React.Component{
         this.resetForm();
     }
 
-    renderInventoryTable(){
+     renderInventoryTable=()=>{
         if(this.state.inventories.length > 0){
             return(
                 <InventoryTable inventories={this.state.inventories}
@@ -128,17 +132,18 @@ class App extends React.Component{
     }
 
     render(){
-        return(
-            <div className="row">
-                <div className="col"></div>
-                <div className="col-10">
-                    {this.renderInventoyTable()}
-                    {this.renderForm()}
-                    {this.renderMessage()}
-                </div>
-                <div className="col"></div>
+        return (
+          <div className="row">
+            <div className="col"></div>
+            <div>
+            
+              {this.renderInventoryTable()}
+              {this.renderForm()}
+              {this.renderMessage()}
             </div>
-        )
+            <div className="col"></div>
+          </div>
+        );
     }
 }
 

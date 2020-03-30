@@ -10,6 +10,10 @@ const InventorySchema = new Schema({
     type: String,
     required: true
   },
+  serialNumber: {
+    type: String,
+    required: false
+  },
   location: {
     type: String,
     required: true
@@ -18,7 +22,7 @@ const InventorySchema = new Schema({
     type: Number,
     required: true
   },
-  quantiy: {
+  quantity: {
     type: Number,
     required: true
   }

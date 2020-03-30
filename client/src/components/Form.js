@@ -11,7 +11,7 @@ const Form = (props)=>{
             placeholder="Enter Item Name"
             labelName="Item Name: "
             handleChange={props.handleChange}
-            value={props.inventoy.itemName}
+            value={props.inventory.itemName}
           />
           <Input
             name="modelNumber"
@@ -19,6 +19,13 @@ const Form = (props)=>{
             labelName="Model Number: "
             handleChange={props.handleChange}
             value={props.inventory.modelNumber}
+          />
+          <Input
+            name="serialNumber"
+            placeholder="Enter Serial Number"
+            labelName="Serial Number: "
+            handleChange={props.handleChange}
+            value={props.inventory.serialNumber}
           />
           <Input
             name="location"
@@ -36,10 +43,10 @@ const Form = (props)=>{
           />
           <Input
             name="quantity"
-            placeholder="Enter Quantiy"
-            labelName="On Hand Quantiy: "
+            placeholder="Enter Quantity"
+            labelName="On Hand Quantity: "
             handleChange={props.handleChange}
-            value={props.inventory.quantiy}
+            value={props.inventory.quantity}
           />
         </div>
         <button type="submit" className="btn btn-primary">

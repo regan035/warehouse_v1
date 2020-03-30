@@ -9,13 +9,14 @@ const InventoryTable = (props)=>{
             <th scope="col">#</th>
             <th scope="col">Item Name</th>
             <th scope="col">Model Number</th>
+            <th scope="col">Serial Number</th>
             <th scope="col">Storage Location</th>
             <th scope="col">Unit Price</th>
-            <th scope="col">On Hand Quantiy</th>
+            <th scope="col">On Hand Quantity</th>
           </tr>
         </thead>
         <tbody>
-          {props.inventory.map(inventory => {
+          {props.inventories.map(inventory => {
             return (
               <InventoryTableRow
                 key={inventory._id}

@@ -1,26 +1,29 @@
 export default {
-    getEmployees : ()=>{
-        return fetch('/inventory')
+    getInventories : ()=>{
+        return fetch('http://localhost:3001/inventory')
                 .then(res => res.json())
                 .then(data => data);
     },
-    deleteEmployee : (_id)=>{
-        return fetch(`/inventory/${_id}`,
-                    {method : 'delete'})
-                    .then(res => res.json())
-                    .then(data => data);
+    deleteInventory : (_id)=>{
+        return fetch(`http://localhost:3001/inventory/${_id}`, {
+          method: "delete"
+        })
+          .then(res => res.json())
+          .then(data => data);
     },
-    updateEmployee : (inventory)=>{
-        return fetch(`/inventory/${inventory._id}`,
-                    {method : "put",
-                     body: JSON.stringify(inventory),
-                     headers : {
-                         "Content-Type" : "application/json"
-                     }}).then(res => res.json())
-                        .then(data => data);
+    updateInventory : (inventory)=>{
+        return fetch(`http://localhost:3001/inventory/${inventory._id}`, {
+          method: "put",
+          body: JSON.stringify(inventory),
+          headers: {
+            "Content-Type": "application/json"
+          }
+        })
+          .then(res => res.json())
+          .then(data => data);
     },
-    createEmployee : (inventory)=>{
-        return fetch(`/inventory`,
+    createInventory : (inventory)=>{
+        return fetch(`http://localhost:3001/inventory`,
             {method : 'post',
             body: JSON.stringify(inventory),
             headers : {

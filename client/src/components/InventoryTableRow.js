@@ -1,15 +1,16 @@
 import React from 'react';
 
 const InventoryTableRow = (props)=>{
-    const {itemName,modelNumber,location,price,quantiy,_id} = props.inventory;
+    const {itemName,modelNumber,serialNumber,location,price,quantity,_id} = props.inventory;
     return (
       <tr>
         <th scope="row">{_id}</th>
         <td>{itemName}</td>
         <td>{modelNumber}</td>
+        <td>{serialNumber}</td>
         <td>{location}</td>
         <td>{price}</td>
-        <td>{quantiy}</td>
+        <td>{quantity}</td>
 
         <td>
           <div className="btn-group" role="group" aria-label="Basic example">
