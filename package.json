@@ -1,11 +1,11 @@
 {
-  "name": "inventory_management",
+  "name": "mern",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index",
+    "start": "node server",
     "client": "cd client && npm run start",
     "server": "nodemon index --ignore client/",
     "client-install": "cd client && npm install",
