@@ -12,7 +12,7 @@ app.use(
 app.use(bodyParser.json());
 
 //routes
-const inventory = require('./routes/inventory');
+const inventory = require('./routes/router.js');
 app.use('/inventory',inventory);
 
 if(process.env.NODE_ENV === 'production'){

@@ -52,6 +52,9 @@ const Form = (props)=>{
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
+        <button type="log out" className="btn btn-danger">
+          Logout
+        </button>
       </form>
     );
 }

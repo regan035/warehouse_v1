@@ -6,7 +6,7 @@ const InventoryTable = (props)=>{
       <table className="table">
         <thead>
           <tr>
-            <th scope="col">#</th>
+            {/* <th scope="col">#</th> */}
             <th scope="col">Item Name</th>
             <th scope="col">Model Number</th>
             <th scope="col">Serial Number</th>
