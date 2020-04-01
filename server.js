@@ -1,7 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 const cors = require('cors');
+require('dotenv').config();
 
 const app = express();
 app.use(
@@ -10,10 +12,14 @@ app.use(
   })
 );
 app.use(bodyParser.json());
+app.use(cookieParser());
 
 //routes
 const inventory = require('./routes/router.js');
 app.use('/inventory',inventory);
+
+const authRoutes = require('./routes/auth.js');
+app.use('/auth', authRoutes);
 
 if(process.env.NODE_ENV === 'production'){
     app.use(express.static('client/build'));
@@ -29,8 +35,8 @@ mongoose.connect(uri,
     useFindAndModify: false
 },(err)=>{
     if(err){
-        process.exit(1);
         console.log('unable to connect to database');
+        process.exit(1);
     }
     else
         console.log('successfully connected to the database');
