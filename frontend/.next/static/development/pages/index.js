@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/signup.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
 /***/ "./components/Header.js":
 /*!******************************!*\
@@ -170,175 +170,6 @@ var Layout = function Layout(_ref) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
-
-/***/ }),
-
-/***/ "./components/auth/SignupComponent.js":
-/*!********************************************!*\
-  !*** ./components/auth/SignupComponent.js ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-
-
-var _this = undefined,
-    _jsxFileName = "/Users/genli/Desktop/warehouse_v2/frontend/components/auth/SignupComponent.js";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-
-
-var SignupComponent = function SignupComponent() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
-    name: "",
-    email: "",
-    password: "",
-    error: "",
-    loading: false,
-    message: "",
-    showForm: true
-  }),
-      values = _useState[0],
-      setValues = _useState[1];
-
-  var name = values.name,
-      email = values.email,
-      password = values.password,
-      error = values.error,
-      loading = values.loading,
-      message = values.message,
-      showForm = values.showForm;
-
-  var handleSubmit = function handleSubmit(e) {
-    e.preventDefault();
-    console.table({
-      name: name,
-      email: email,
-      password: password,
-      error: error,
-      loading: loading,
-      message: message,
-      showForm: showForm
-    });
-  };
-
-  var handleChange = function handleChange(name) {
-    return function (e) {
-      setValues(_objectSpread({}, values, Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
-        error: false
-      }, name, e.target.value)));
-    };
-  };
-
-  var signupForm = function signupForm() {
-    return __jsx("form", {
-      onSubmit: handleSubmit,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27,
-        columnNumber: 7
-      }
-    }, __jsx("div", {
-      className: "form-group",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 28,
-        columnNumber: 9
-      }
-    }, __jsx("input", {
-      value: name,
-      onChange: handleChange("name"),
-      type: "text",
-      className: "form-control",
-      placeholder: "Type your name",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29,
-        columnNumber: 11
-      }
-    })), __jsx("div", {
-      className: "form-group",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 38,
-        columnNumber: 9
-      }
-    }, __jsx("input", {
-      value: email,
-      onChange: handleChange("email"),
-      type: "email",
-      className: "form-control",
-      placeholder: "Type your email",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39,
-        columnNumber: 11
-      }
-    })), __jsx("div", {
-      className: "form-group",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 48,
-        columnNumber: 9
-      }
-    }, __jsx("input", {
-      value: password,
-      onChange: handleChange("password"),
-      type: "password",
-      className: "form-control",
-      placeholder: "Type your password",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 49,
-        columnNumber: 11
-      }
-    })), __jsx("div", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 58,
-        columnNumber: 9
-      }
-    }, __jsx("button", {
-      className: "btn btn-primary",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 59,
-        columnNumber: 11
-      }
-    }, "Signup")));
-  };
-
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 10
-    }
-  }, signupForm());
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (SignupComponent);
 
 /***/ }),
 
@@ -2180,21 +2011,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsignup&absolutePagePath=%2FUsers%2Fgenli%2FDesktop%2Fwarehouse_v2%2Ffrontend%2Fpages%2Fsignup.js!./":
-/*!*******************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsignup&absolutePagePath=%2FUsers%2Fgenli%2FDesktop%2Fwarehouse_v2%2Ffrontend%2Fpages%2Fsignup.js ***!
-  \*******************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fgenli%2FDesktop%2Fwarehouse_v2%2Ffrontend%2Fpages%2Findex.js!./":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fgenli%2FDesktop%2Fwarehouse_v2%2Ffrontend%2Fpages%2Findex.js ***!
+  \************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/signup", function() {
-      var mod = __webpack_require__(/*! ./pages/signup.js */ "./pages/signup.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
+      var mod = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
       if(true) {
-        module.hot.accept(/*! ./pages/signup.js */ "./pages/signup.js", function() {
-          if(!next.router.components["/signup"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/signup.js */ "./pages/signup.js")
-          next.router.update("/signup", updatedPage)
+        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
+          if(!next.router.components["/"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+          next.router.update("/", updatedPage)
         })
       }
       return mod
@@ -20240,10 +20071,10 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./pages/signup.js":
-/*!*************************!*\
-  !*** ./pages/signup.js ***!
-  \*************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -20252,72 +20083,61 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_auth_SignupComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/auth/SignupComponent */ "./components/auth/SignupComponent.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 var _this = undefined,
-    _jsxFileName = "/Users/genli/Desktop/warehouse_v2/frontend/pages/signup.js";
+    _jsxFileName = "/Users/genli/Desktop/warehouse_v2/frontend/pages/index.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-var Signup = function Signup() {
+var Index = function Index() {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 3
+    }
+  }, __jsx("h2", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8,
       columnNumber: 5
     }
-  }, __jsx("h2", {
-    className: "text-center pt-4 pb-4",
+  }, "Index page"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/signup",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9,
-      columnNumber: 7
+      columnNumber: 5
     }
-  }, "Signup Page"), __jsx("div", {
-    className: "row",
+  }, __jsx("a", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10,
-      columnNumber: 9
+      columnNumber: 7
     }
-  }, __jsx("div", {
-    className: "col-md-6 offset-md-3",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 11
-    }
-  }, __jsx(_components_auth_SignupComponent__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 13
-    }
-  }))));
+  }, "Signup")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Signup);
+/* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 3:
-/*!***********************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fsignup&absolutePagePath=%2FUsers%2Fgenli%2FDesktop%2Fwarehouse_v2%2Ffrontend%2Fpages%2Fsignup.js ***!
-  \***********************************************************************************************************************************************/
+/***/ 1:
+/*!****************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fgenli%2FDesktop%2Fwarehouse_v2%2Ffrontend%2Fpages%2Findex.js ***!
+  \****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fsignup&absolutePagePath=%2FUsers%2Fgenli%2FDesktop%2Fwarehouse_v2%2Ffrontend%2Fpages%2Fsignup.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fsignup&absolutePagePath=%2FUsers%2Fgenli%2FDesktop%2Fwarehouse_v2%2Ffrontend%2Fpages%2Fsignup.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fgenli%2FDesktop%2Fwarehouse_v2%2Ffrontend%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fgenli%2FDesktop%2Fwarehouse_v2%2Ffrontend%2Fpages%2Findex.js!./");
 
 
 /***/ }),
@@ -20333,5 +20153,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=signup.js.map
+},[[1,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=index.js.map

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -260,173 +260,6 @@ const Layout = ({
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
-
-/***/ }),
-
-/***/ "./components/auth/SignupComponent.js":
-/*!********************************************!*\
-  !*** ./components/auth/SignupComponent.js ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/genli/Desktop/warehouse_v2/frontend/components/auth/SignupComponent.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-const SignupComponent = () => {
-  const {
-    0: values,
-    1: setValues
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    name: "",
-    email: "",
-    password: "",
-    error: "",
-    loading: false,
-    message: "",
-    showForm: true
-  });
-  const {
-    name,
-    email,
-    password,
-    error,
-    loading,
-    message,
-    showForm
-  } = values;
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    console.table({
-      name,
-      email,
-      password,
-      error,
-      loading,
-      message,
-      showForm
-    });
-  };
-
-  const handleChange = name => e => {
-    setValues(_objectSpread({}, values, {
-      error: false,
-      [name]: e.target.value
-    }));
-  };
-
-  const signupForm = () => {
-    return __jsx("form", {
-      onSubmit: handleSubmit,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27,
-        columnNumber: 7
-      }
-    }, __jsx("div", {
-      className: "form-group",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 28,
-        columnNumber: 9
-      }
-    }, __jsx("input", {
-      value: name,
-      onChange: handleChange("name"),
-      type: "text",
-      className: "form-control",
-      placeholder: "Type your name",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29,
-        columnNumber: 11
-      }
-    })), __jsx("div", {
-      className: "form-group",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 38,
-        columnNumber: 9
-      }
-    }, __jsx("input", {
-      value: email,
-      onChange: handleChange("email"),
-      type: "email",
-      className: "form-control",
-      placeholder: "Type your email",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39,
-        columnNumber: 11
-      }
-    })), __jsx("div", {
-      className: "form-group",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 48,
-        columnNumber: 9
-      }
-    }, __jsx("input", {
-      value: password,
-      onChange: handleChange("password"),
-      type: "password",
-      className: "form-control",
-      placeholder: "Type your password",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 49,
-        columnNumber: 11
-      }
-    })), __jsx("div", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 58,
-        columnNumber: 9
-      }
-    }, __jsx("button", {
-      className: "btn btn-primary",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 59,
-        columnNumber: 11
-      }
-    }, "Signup")));
-  };
-
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 10
-    }
-  }, signupForm());
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (SignupComponent);
 
 /***/ }),
 
@@ -2105,10 +1938,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/signup.js":
-/*!*************************!*\
-  !*** ./pages/signup.js ***!
-  \*************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2117,70 +1950,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_auth_SignupComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/auth/SignupComponent */ "./components/auth/SignupComponent.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/genli/Desktop/warehouse_v2/frontend/pages/signup.js";
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/genli/Desktop/warehouse_v2/frontend/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-const Signup = () => {
+const Index = () => {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 3
+    }
+  }, __jsx("h2", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8,
       columnNumber: 5
     }
-  }, __jsx("h2", {
-    className: "text-center pt-4 pb-4",
+  }, "Index page"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/signup",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9,
-      columnNumber: 7
+      columnNumber: 5
     }
-  }, "Signup Page"), __jsx("div", {
-    className: "row",
+  }, __jsx("a", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10,
-      columnNumber: 9
+      columnNumber: 7
     }
-  }, __jsx("div", {
-    className: "col-md-6 offset-md-3",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 11
-    }
-  }, __jsx(_components_auth_SignupComponent__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 13
-    }
-  }))));
+  }, "Signup")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Signup);
+/* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 5:
-/*!*******************************!*\
-  !*** multi ./pages/signup.js ***!
-  \*******************************/
+/***/ 3:
+/*!******************************!*\
+  !*** multi ./pages/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/genli/Desktop/warehouse_v2/frontend/pages/signup.js */"./pages/signup.js");
+module.exports = __webpack_require__(/*! /Users/genli/Desktop/warehouse_v2/frontend/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -2252,4 +2074,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=signup.js.map
+//# sourceMappingURL=index.js.map
