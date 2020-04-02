@@ -19,7 +19,7 @@ function Signin(){
             window.location.replace("/warehouse");
         })
         .catch(err=>{
-            alert("Not Correct Info")
+            alert("Please verify your login credential and try again.");
             console.log(err)
         })
     }
