@@ -28,7 +28,7 @@ if(process.env.NODE_ENV === 'production'){
     });
 }
 
-const uri = process.env.mongodb || 'mongodb://localhost:27017/inventory';
+const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/inventory';
 mongoose.connect(uri,
 {
     useNewUrlParser: true,
