@@ -13,6 +13,7 @@ const InventoryTable = (props)=>{
             <th scope="col">Storage Location</th>
             <th scope="col">Unit Price</th>
             <th scope="col">On Hand Quantity</th>
+            <th scope="col">Total Value</th>
           </tr>
         </thead>
         <tbody>

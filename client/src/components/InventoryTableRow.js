@@ -11,6 +11,9 @@ const InventoryTableRow = (props)=>{
         <td>{location}</td>
         <td>{price}</td>
         <td>{quantity}</td>
+        <td>
+          {quantity}*{price}
+        </td>
 
         <td>
           <div className="btn-group" role="group" aria-label="Basic example">
