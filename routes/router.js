@@ -1,6 +1,6 @@
 const express = require('express');
 const inventoryRouter = express.Router();
-const Inventory = require('../model/Inventory.js');
+const Inventory = require('../model/inventory.js');
 
 //CRUD
 
