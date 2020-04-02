@@ -1,0 +1,152 @@
+/* form.signup,
+form.login {
+  margin-top: 50px;
+} */
+
+/* body{
+  margin: 0;
+  padding: 0;
+} */
+
+/* section{
+
+  height: 90vh;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: relative;
+background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8,  #dd00f3, #dd00f3);
+background-size: 1000% 1000%;
+
+
+
+-webkit-animation: rainbow 30s ease infinite;
+-z-animation: rainbow 30s ease infinite;
+-o-animation: rainbow 30s ease infinite;
+  animation: rainbow 30s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+   
+} */
+section:before{
+  position: absolute;
+  content: '';
+  height: 120vh;
+  width: 100%;
+  left: 0;
+  /* bottom: 0; */
+  background-image: url(../asset/warehouse.jpg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+
+
+ .card-body {
+  position: relative;
+  background-color: #ebedee;
+  opacity: .9;
+  padding:18px;
+  border-radius: 10px;
+}
+
+
+.user-img img{
+
+  height: 150px;
+  width: 150px;
+}
+
+/* .form-group{
+  margin-bottom: 20px;
+} */
+
+.form-group input{
+  height: 42px;
+  border-radius: 5px;
+  border: 1;
+  font-size: 18px;
+  padding-left: 54px;
+  font-family: 'Sen', sans-serif;;
+}
+
+.btn-default{
+  font-size: 19px;
+  border-radius: 5px;
+  width: 150px;
+  border: 1px solid #47504e;
+}
+
+.btn-default:hover{
+  background-color: #47504e;
+  border: 1px solid #ebedee;
+  color: #ebedee;
+}
+
+/* #cityApiCall {
+  margin-bottom: 10px;
+} */
+
+/* #thirdRow {
+  margin-top: 15px;
+} */
+
+/* #cityBtn {
+  margin-top: 10px;
+} */
+
+/* form-control.text:{
+  
+  height: 100px;
+} */
+
+/* .link{
+  float: right;
+ 
+} */
+
+/* .navbar-brand{
+   font-size: medium!important;
+}
+ */
+
+/* font-family: 'Permanent Marker', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Sen', sans-serif; */
+h2{
+  font-family: 'Kaushan Script', cursive;
+}
+h3{
+  font-family:'Sen', sans-serif;
+}
+
+textarea{
+  font-family: 'Sen', sans-serif;
+  font-size: larger !important;
+
+}

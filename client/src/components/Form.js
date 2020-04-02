@@ -52,7 +52,7 @@ const Form = (props)=>{
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
-        <button type="log out" className="btn btn-danger">
+        <button type="log out" className="btn btn-danger" onClick={()=>window.location.replace("/")}>
           Logout
         </button>
       </form>

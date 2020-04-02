@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { signup } from '../../actions/auth';
 
 const SignupComponent = () => {
   const [values, setValues] = useState({
@@ -16,6 +17,7 @@ const SignupComponent = () => {
   const handleSubmit = e => {
     e.preventDefault();
     console.table({ name, email, password, error, loading, message, showForm });
+    signup({name, email, password})
   };
 
   const handleChange = name => e => {

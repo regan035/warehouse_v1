@@ -4,8 +4,10 @@ const jwt = require('jsonwebtoken');
 const expressJwt = require('express-jwt');
 
 exports.signup = (req,res)=>{
+
+    console.log("inside signup controller", typeof req.body)
     const {name,email,password} = req.body;
-    console.log(req.body)
+    //req.body = JSON.parse(req.body)
     // res.json({
     //     user:{name,email,password}
     // })
@@ -24,6 +26,7 @@ exports.signup = (req,res)=>{
         let newUser = new User({name,email,password});
         newUser.save((err,success)=>{
             if(err){
+                console.log(err)
                 return res.status(400).json({
                     error: err
                 })
@@ -65,9 +68,10 @@ exports.signin = (req, res) => {
 
 exports.signout = (req, res) => {
     res.clearCookie('token');
-    res.json({
-        message: 'Signout success'
-    });
+    // res.json({
+    //     message: 'Signout success'
+    // });
+    res.redirect("/")
 };
 
 exports.requireSignin = expressJwt({

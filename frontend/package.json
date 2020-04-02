@@ -2,16 +2,18 @@
   "name": "frontend",
   "version": "1.0.0",
   "description": "",
+  "proxy": "http://localhost:3001/",
   "main": "index.js",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "isomorphic-fetch": "^2.2.1",
     "next": "^9.3.4",
     "react": "^16.13.1",

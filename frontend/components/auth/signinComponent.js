@@ -26,7 +26,7 @@ const SignupComponent = () => {
   const signupForm = () => {
     return (
 
-
+      <form>
         <div className="form-group">
           <input
             value={email}
