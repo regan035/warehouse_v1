@@ -10,7 +10,8 @@ function Signin(){
     const regularLogin = (event) => {
         event.preventDefault()
         console.log("logging in as " + email)
-        document.cookie = "loggedIn=true";
+        document.cookie = "loggedIn=true&email="+email;
+      
         axios.post("auth/signin", {email, password})
         .then(res=>{
             console.log(res)

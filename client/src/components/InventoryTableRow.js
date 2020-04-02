@@ -12,7 +12,7 @@ const InventoryTableRow = (props)=>{
         <td>{price}</td>
         <td>{quantity}</td>
         <td>
-          {quantity}*{price}
+          {quantity*price}
         </td>
 
         <td>

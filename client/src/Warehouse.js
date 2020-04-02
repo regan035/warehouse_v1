@@ -3,6 +3,7 @@ import InventoryTable from './components/InventoryTable';
 import Form from './components/Form';
 import Message from './components/Message';
 import InventoryAPI from './InventoryAPI';
+import NavBar from './components/Navbar';
 
 class Warehouse extends React.Component{
     constructor(props){
@@ -26,6 +27,17 @@ class Warehouse extends React.Component{
         this.updateHandler = this.updateHandler.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.showEditForm = this.showEditForm.bind(this);
+    }
+
+    totalIvnentory(){
+        let total = 0
+        let inv = this.state.inventories
+        console.log(inv)
+
+        for(var i=0; i<inv.length;i++){
+            total+= inv[i].quantity*inv[i].price
+        }
+        return total
     }
 
     componentDidMount(){
@@ -136,7 +148,7 @@ class Warehouse extends React.Component{
           <div className="row">
             <div className="col"></div>
             <div>
-            
+                <NavBar total = {this.totalIvnentory()}/>
               {this.renderInventoryTable()}
               {this.renderForm()}
               {this.renderMessage()}
