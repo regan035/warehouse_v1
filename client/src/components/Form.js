@@ -58,9 +58,7 @@ const Form = (props)=>{
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
-        <button type="log out" className="btn btn-danger" onClick={handleSignout}>
-          Logout
-        </button>
+
       </form>
     );
 }

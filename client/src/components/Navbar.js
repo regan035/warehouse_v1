@@ -34,7 +34,7 @@ class NavBar extends React.Component{
             className="navbar navbar-light"
             style={{ backgroundColor: "#e3f2fd" }}
           >
-            navBar{this.props.total}
+            Your total inventoryies value is :${this.props.total}
             {Cookies.get("email")}
             <button
               type="log out"
