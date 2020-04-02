@@ -2,6 +2,12 @@ import React from 'react';
 import Input from './Input';
 
 const Form = (props)=>{
+
+    const handleSignout = ()=>{
+      document.cookie = "loggedIn=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+      window.location.replace("/");
+    }
+
     return (
       <form onSubmit={props.handler}>
         <h4>{props.isEditForm ? "Editing Inventoy: " : "Add Inventory: "}</h4>
@@ -52,7 +58,7 @@ const Form = (props)=>{
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
-        <button type="log out" className="btn btn-danger" onClick={()=>window.location.replace("/")}>
+        <button type="log out" className="btn btn-danger" onClick={handleSignout}>
           Logout
         </button>
       </form>

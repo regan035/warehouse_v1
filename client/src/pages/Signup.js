@@ -12,6 +12,7 @@ function Signup(){
     const signupListener = (event) => {
         event.preventDefault()
         console.log("signing up")
+        document.cookie='loggedIn=true'
         axios.post("http://localhost:3001/auth/signup", {email, password, name})
         .then(res=>{
             console.log(res)
@@ -38,7 +39,7 @@ function Signup(){
             <div className="card-body">
               <div className="col-md-12 modal-content ">
                 <div className="col-12 user-img">
-                  <img src={require('./asset/face1.png')} />
+                  <img src={require("./asset/face1.png")} />
                 </div>
 
                 <h2>Warehouse Management Application</h2>
@@ -101,7 +102,7 @@ function Signup(){
                 </form>
                 <br />
                 <p>
-                  Already have an account?<a href="/">Please sign in.</a>
+                  Already have an account? Please <a href="/">sign in.</a>
                 </p>
               </div>
             </div>

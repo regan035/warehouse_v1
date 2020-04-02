@@ -10,28 +10,28 @@ import "../src/pages/asset/style.css"
 function App() {
   return (
     <Router>
-    <div>
-      <Switch>
+      <div>
+        <Switch>
+          <Route exact path="/warehouse">
+            {document.cookie.match(/^.*loggedIn=true.*$/)?
+            <Warehouse />:
+            <h1>Please Signin first</h1>}
+          </Route>
 
-        <Route exact path="/warehouse">
-          <Warehouse />
-        </Route>
+          <Route exact path={["/", "/signin"]}>
+            <Signin />
+          </Route>
 
-        <Route exact path={["/", "/signin"]}>
-          <Signin />
-        </Route>
+          <Route exact path="/signup">
+            <Signup />
+          </Route>
 
-        <Route exact path="/signup">
-          <Signup />
-        </Route>
-
-        <Route>
-          <Signin />
-        </Route>
-
-      </Switch>
-    </div>
-  </Router>
+          <Route>
+            <Signin />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
