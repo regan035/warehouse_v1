@@ -11,7 +11,7 @@ function Signin(){
         event.preventDefault()
         console.log("logging in as " + email)
         document.cookie = "loggedIn=true";
-        axios.post("http://localhost:3001/auth/signin", {email, password})
+        axios.post("auth/signin", {email, password})
         .then(res=>{
             console.log(res)
             setEmail("");

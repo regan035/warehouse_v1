@@ -13,7 +13,7 @@ function Signup(){
         event.preventDefault()
         console.log("signing up")
         document.cookie='loggedIn=true'
-        axios.post("http://localhost:3001/auth/signup", {email, password, name})
+        axios.post("auth/signup", {email, password, name})
         .then(res=>{
             console.log(res)
             setEmail("");

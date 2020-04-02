@@ -3,15 +3,15 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
-const path = require('path');
+const path = require('path')
 require('dotenv').config();
 
 const app = express();
-app.use(
-  cors({
-    origin: "http://localhost:3000"
-  })
-);
+// app.use(
+//   cors({
+//     origin: "http://localhost:3000"
+//   })
+// );
 app.use(bodyParser.json());
 app.use(cookieParser());
 
