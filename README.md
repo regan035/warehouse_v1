@@ -28,7 +28,7 @@ Sign in Page ![alt text](https://github.com/regan035/warehouse_v1/tree/master/cl
 
 If you are the first time user. Please click sign up botton and register with a valid e-mail,name and password, then click the `Signup` button.
 
-Login Page ![alt text](https://github.com/regan035/warehouse_v1/tree/master/client/src/pages/asset/signuppage?raw=true)
+Login Page ![alt text](https://github.com/regan035/warehouse_v1/tree/master/client/src/pages/asset/signuppage.png?raw=true)
 
 Once Signed in, the user can add, edit and delete the inventories and the total value for all inventories will displayed on top of the page.
 
