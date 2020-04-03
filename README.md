@@ -24,15 +24,15 @@ This project is hosted by heroku, simply navigate to the URL in your favoirte br
 
 Upon arriving on the ladning page, the user will be reqired to sign in. Sign up option are reqired for first tune user. To do so, simply input a valid e-mail address,name and password, then click the `Sign Up` button.
 
-Sign in Page ![ ](https://github.com/regan035/warehouse_v1/tree/master/readmeimg/signinpage.png)
+Sign in Page !<img scr ="readmeimg/signinpage.png" width ="600">
 
 If you are the first time user. Please click sign up botton and register with a valid e-mail,name and password, then click the `Signup` button.
 
-Login Page ![ ](https://github.com/regan035/warehouse_v1/tree/master/readmeimg/signuppage.png)
+Sign up Page !<img scr ="readmeimg/signuppage.png" width ="600">
 
 Once Signed in, the user can add, edit and delete the inventories and the total value for all inventories will displayed on top of the page.
 
-Warehouse Page ![ ](https://github.com/regan035/warehouse_v1/tree/master/readmeimg/warehousepage.png)
+Warehouse Page !<img scr ="readmeimg/warehousepage.png" width ="600">
 
 
 ## Contacts
