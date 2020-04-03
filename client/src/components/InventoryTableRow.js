@@ -4,7 +4,7 @@ const InventoryTableRow = (props)=>{
     const {itemName,modelNumber,serialNumber,location,price,quantity,_id} = props.inventory;
     return (
       <tr>
-        {/* <th scope="row">{_id}</th> */}
+      
         <td>{itemName}</td>
         <td>{modelNumber}</td>
         <td>{serialNumber}</td>

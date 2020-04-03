@@ -42,7 +42,7 @@ function Signin(){
                 </div>
 
                 <h2>Warehouse Management Application</h2>
-                <h3>Login Form</h3>
+                <h3>Sign In Form</h3>
                 <form className="login">
                   <div className="form-group">
                     <label htmlFor="exampleInputEmail1">Email address</label>
@@ -85,7 +85,7 @@ function Signin(){
                     className="btn btn-default"
                     onClick={regularLogin}
                   >
-                    Login
+                    Sign In
                   </button>
                 </form>
                 <br />
