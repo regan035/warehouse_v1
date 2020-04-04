@@ -1,5 +1,5 @@
 
-# Project3 Warehouse Management Application
+# Project3 -Warehouse Management Application
 
 
 ## Table of Contents
