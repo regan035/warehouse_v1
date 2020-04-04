@@ -22,7 +22,7 @@ This project is hosted by heroku, simply click the URL link [Launch Hosted Appli
 
 ## Usage
 
-Upon arriving on the ladning page, the user will be reqired to sign in. Sign up option are reqired for first time user. To do so, simply input a valid e-mail address,name and password, then click the `Sign Up` button.
+Upon arriving on the ladning page, the user will be reqired to sign in. Sign up option is reqired for first time user. To do so, simply input a valid e-mail address,name and password, then click the `Sign Up` button.
 
 Sign in Page ![ ](readmeimg/signinpage.png)
 
