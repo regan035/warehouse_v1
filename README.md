@@ -13,12 +13,12 @@
 
 ## About the Project
 
-Project3 is a MERN stack Warehouse Management Application that helps users to track the inventories storage locations and monitor values. Application consolidates authentication to verify the user and utilizes get, put, post and delete function to interact with back-end database.  
-[Launch Hosted Application!](https://gen-warehouse-app.herokuapp.com/ "Launch Project 3")
+Project3 is a MERN stack Warehouse Management Application that helps users tracking the inventory storage locations and monitoring values. Application consolidates authentication to verify the user's credential and utilizes get, put, post and delete function to interact with back-end database.  
+
 
 ## Getting Started
 
-This project is hosted by heroku, simply navigate to the URL in your favoirte browser and create a login with an e-mail and password.
+This project is hosted by heroku, simply click the URL link [Launch Hosted Application!](https://gen-warehouse-app.herokuapp.com/ "Launch Project 3") and create a login with an e-mail,name and password.
 
 ## Usage
 
